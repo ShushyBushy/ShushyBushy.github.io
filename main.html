@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roblox Response</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="message">Waiting for message...</h1>
+
+    <script>
+        $(document).ready(function(){
+            var urlParams = new URLSearchParams(window.location.search);
+            var msg = urlParams.get('msg');
+
+            if(msg === 'Chungus') {
+                $('#message').text('Hello, Chungus!');
+            }
+        });
+    </script>
+</body>
+</html>
